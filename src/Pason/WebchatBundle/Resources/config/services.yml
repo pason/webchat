@@ -1,0 +1,14 @@
+parameters:
+#    pason_webchat.example.class: Pason\WebchatBundle\Example
+
+services:
+#    pason_webchat.example:
+#        class: %pason_webchat.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+
+
+services:
+    chat_service:
+        class: Pason\WebchatBundle\Services\ChatService
+        tags:
+            - { name: varspool_websocket.application, key: chat }

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body {
+	padding-top: 60px;
+}
+
+p {
+	margin: 5px;
+}
+
+#chatContent {
+	margin:10px;
+	width:800px;
+	height:400px;
+	overflow:auto;
+	border: 1px solid black;	
+}
+
+.content {
+	width: 900px ;
+  	margin-left: auto ;
+  	margin-right: auto ;
+	text-align: center ; 	
+}
+

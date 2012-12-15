@@ -1,0 +1,7 @@
+pason_webchat_homepage:
+    pattern:  /
+    defaults: { _controller: PasonWebchatBundle:Default:index }
+
+pason_webchat_chat:
+    pattern:  /chat
+    defaults: { _controller: PasonWebchatBundle:Default:chat }
