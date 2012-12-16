@@ -12,3 +12,5 @@ services:
         class: Pason\WebchatBundle\Services\ChatService
         tags:
             - { name: varspool_websocket.application, key: chat }
+        arguments: 
+            em: "@service_container" 

@@ -22,7 +22,8 @@
         "friendsofsymfony/user-bundle": "*",
         "kwattro/markdown-bundle": "dev-master",
         "varspool/websocket-bundle": "dev-master",
-        "wrench/wrench": "dev-master"
+        "wrench/wrench": "dev-master",
+        "jms/serializer-bundle": "*"
     },
     "scripts": {
         "post-install-cmd": [

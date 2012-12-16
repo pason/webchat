@@ -5,3 +5,9 @@ pason_webchat_homepage:
 pason_webchat_chat:
     pattern:  /chat
     defaults: { _controller: PasonWebchatBundle:Default:chat }
+
+pason_webchat_user:
+    pattern:  /getuser
+    defaults: { _controller: PasonWebchatBundle:Default:getuser }
+    
+    

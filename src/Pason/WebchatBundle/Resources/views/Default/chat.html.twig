@@ -2,14 +2,31 @@
 
 {% block  content %}
 
-<div id="chatContent"></div>
-
+	<div id="chatContent"></div>
+	<div id="chanels">
+		<ul id="list"></ul>
+	</div>
+	
+	<div style="clear:both" />
+	
 	<div>
 	
-		<span id="status">Connecting...</span>	
+		<span id="status">Łączenie...</span>	
 		<input type="text" id="messageInput" disabled="disabled" />
 
 	</div>
-
-
+	
+	{% if is_granted("ROLE_ADMIN") %}
+    	
+    	Dodaj nowy kanał: <input type="text" id="addChanel">
+    	<button id="buttonChanel" type="button" >Dodaj</button>
+	{% endif %}
+	
+	
+	<script type="text/javascript">
+		var wsServerAddress = "{{ wsServer }}";
+	</script>
+	
+	<script src="{{ asset('bundles/pasonwebchat/js/chat.js') }}"></script> 
+	
 {% endblock %}

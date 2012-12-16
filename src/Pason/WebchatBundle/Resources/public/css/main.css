@@ -10,10 +10,19 @@ p {
 
 #chatContent {
 	margin:10px;
-	width:800px;
+	width:750px;
 	height:400px;
 	overflow:auto;
 	border: 1px solid black;	
+	float:left;
+}
+
+#chanels {
+	margin-top:10px;
+	height:400px;
+	width:160px;
+	overflow:auto;
+	border: 1px solid black;
 }
 
 .content {
@@ -23,3 +32,10 @@ p {
 	text-align: center ; 	
 }
 
+li.active {
+	background-color: yellow;
+}
+
+#messageInput {
+	width: 636px;
+}

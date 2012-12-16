@@ -18,9 +18,19 @@ class User extends BaseUser
 	 * @ORM\GeneratedValue(strategy="AUTO")
 	 */
 	protected $id;
-
+	
+	public $chanel; //current chanel
+	
 	public function __construct()
 	{
 		parent::__construct();		
+	}
+	
+	public function setChanel($chanel){
+		$this->chanel = $chanel;
+	}
+	
+	public function getChanel(){
+		return $this->chanel;
 	}
 }
